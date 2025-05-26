@@ -1,0 +1,18 @@
+📌How I Structured the Code
+Created a MobiusStrip class with constructor to set radius, width, and resolution.
+
+Used NumPy for mesh generation (u, v, meshgrid) and parametric equations.
+
+Created plot(), surface_area(), and edge_length() methods for functionality separation.
+
+📌 How I Approximated Surface Area
+Used finite differences (np.gradient) to estimate local area elements across the mesh grid.
+
+Summed up those elements scaled by differential steps in u and v space.
+
+📌 Challenges Faced
+Initially used wrong constructor name (init instead of _init_).
+
+Faced syntax issues in gradient calculations (dy[0]2 instead of dy[0]**2).
+
+Had to adjust mesh resolution to ensure a smooth-looking strip in the 3D plot.
